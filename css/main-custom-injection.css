@@ -4999,6 +4999,27 @@ header {
 
 .mainboxgridbox-style2 {
   margin-bottom: 10px; }
+  .mainboxgridbox-style2 .thememove-menu ul {
+    padding: 20px 20px; }
+    .mainboxgridbox-style2 .thememove-menu ul li {
+      line-height: 24px; }
+      .mainboxgridbox-style2 .thememove-menu ul li::before {
+        content: "\f105";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        left: -20px;
+        top: 3px;
+        color: #f36a22 !important; }
+      .mainboxgridbox-style2 .thememove-menu ul li a {
+        text-decoration: none;
+        color: #262626 !important; }
+        .mainboxgridbox-style2 .thememove-menu ul li a:hover {
+          color: #f36a22 !important; }
   .mainboxgridbox-style2 .calendar-upcoming-events table tr td .date-start {
     border-radius: 10px;
     -moz-border-radius: 10px; }
