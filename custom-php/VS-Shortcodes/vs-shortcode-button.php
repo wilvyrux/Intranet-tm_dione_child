@@ -1,4 +1,3 @@
-
 <?php
 
 function buttons_shortcode( $atts ) {
@@ -81,6 +80,3 @@ function my_custom_buttons_shortcode_vs() {
       )
    ) );
 }
-
-
-?>
