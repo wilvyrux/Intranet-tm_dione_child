@@ -20,7 +20,14 @@ require_once get_theme_file_path() . '/custom-php/wx_custom-style_scripts.php';
 
 
 /*<----// WX EXTRA Shortcode posts //---->*/
-require_once get_theme_file_path() . '/custom-php/wx_custom-shortcodes.php';
+// require_once get_theme_file_path() . '/custom-php/wx_custom-shortcodes.php';
+
+require_once get_theme_file_path() . '/custom-php/VS-Shortcodes/vs-shortcode-heading.php';
+require_once get_theme_file_path() . '/custom-php/VS-Shortcodes/vs-shortcode-button.php';
+require_once get_theme_file_path() . '/custom-php/VS-Shortcodes/vs-shortcode-image_content.php';
+require_once get_theme_file_path() . '/custom-php/VS-Shortcodes/vs-shortocode-detail_list.php';
+require_once get_theme_file_path() . '/custom-php/VS-Shortcodes/vs-shortcode-text_image.php';
+
 
 /*<----//  //---->*/
 
