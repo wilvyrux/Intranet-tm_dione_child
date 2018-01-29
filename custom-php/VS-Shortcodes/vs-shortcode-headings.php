@@ -22,13 +22,15 @@ function heading_shortcode( $atts ) {
     $href = vc_build_link( $a['url_link'] );
     $image = wp_get_attachment_image($image_id, 'full');
     
-        $html .= '<div class="wx-heading '. $dropdown_value .' '. $dropdown_value2 .' '.$dropdown_value3.' '.$dropdown_value4.'">';
-        $html .= '<h1 class="">'. $text_value .'</h1>';
+        $html .= '<div class="wx-heading '. $dropdown_value2 .' '.$dropdown_value3.' '.$dropdown_value4.'">';
+        $html .= '<h1 class="'. $dropdown_value .'">'. $text_value .'</h1>';
         $html .= '<p class="heading-subtitle"> '. $text_value2 .' </p>';
         $html .= '<div class="image"> '. $image .' </div>';
         $html .= '</div>';
        
     return $html;
+    
+    
     
     
 }
@@ -142,8 +144,3 @@ function my_custom_heading_shortcode_vs() {
       )
    ) );
 }
-
-
-
-
-?>

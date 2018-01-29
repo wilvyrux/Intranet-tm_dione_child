@@ -5727,6 +5727,24 @@ header {
   bottom: 5px !important;
   top: inherit; }
 
+.news-slider-holder .feature-image-news {
+  height: 250px;
+  overflow: hidden; }
+
+.news-slider-holder .news-title {
+  background: #f36a22 !important;
+  width: 90%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-top: -20px;
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff !important;
+  text-transform: uppercase; }
+
 .dwqa-single-question {
   margin-bottom: 50px; }
   .dwqa-single-question .dwqa-question-actions {
