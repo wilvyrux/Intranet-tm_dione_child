@@ -4444,6 +4444,9 @@ header {
   header .search-icon.pull-right i {
     color: #fff !important; }
 
+header.header.headroom.headroom--not-top .main-navigation ul li a {
+  color: #fff !important; }
+
 .copyright {
   background: #282828 !important; }
 
@@ -4470,6 +4473,8 @@ header {
       margin-right: 5px;
       display: inline-block;
       color: #f36a22 !important; }
+  .site-footer #media_image-3 img {
+    width: 100%; }
 
 .dwqa-single-question .dwqa-question-meta a,
 .dwqa-single-question .dwqa-answers a {
@@ -5145,6 +5150,76 @@ header {
         color: #f36a22 !important;
         font-size: 2em; }
 
+.mainboxgridbox-style1 {
+  margin-bottom: 10px;
+  margin-top: 80px; }
+  .mainboxgridbox-style1 > div {
+    position: relative; }
+    .mainboxgridbox-style1 > div > div {
+      border: 1px solid #ebebeb !important; }
+  .mainboxgridbox-style1 .title-holder {
+    position: relative;
+    background: #fff !important;
+    padding: 10px;
+    border-bottom: 8px solid #262626 !important;
+    margin-top: -80px; }
+    .mainboxgridbox-style1 .title-holder::before {
+      position: absolute;
+      width: 0;
+      content: '';
+      height: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-left: 10px solid #fff !important;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent; }
+    .mainboxgridbox-style1 .title-holder h4 {
+      margin: 0;
+      font-size: 1.9em;
+      padding: 10px 85px;
+      color: #262626 !important;
+      font-family: "Oswald", sans-serif !important;
+      text-transform: uppercase; }
+    .mainboxgridbox-style1 .title-holder .icon-holder {
+      background: #f36a22 !important;
+      padding: 20px  0px;
+      width: 70px;
+      text-align: center;
+      height: auto;
+      left: 0 !important;
+      top: 0;
+      position: absolute;
+      right: inherit;
+      bottom: -8px; }
+      .mainboxgridbox-style1 .title-holder .icon-holder i {
+        color: #fff !important;
+        font-size: 2.8em; }
+  .mainboxgridbox-style1 .company-calendar {
+    margin: 20px !important; }
+    .mainboxgridbox-style1 .company-calendar .fc-toolbar.fc-header-toolbar::after {
+      display: block;
+      content: '';
+      clear: both; }
+    .mainboxgridbox-style1 .company-calendar .fc-toolbar.fc-header-toolbar > div {
+      float: left;
+      width: 100%;
+      clear: both; }
+    .mainboxgridbox-style1 .company-calendar .fc-toolbar.fc-header-toolbar .fc-left {
+      border-bottom: 1px solid #ebebeb !important;
+      margin-bottom: 15px;
+      padding-bottom: 10px; }
+    .mainboxgridbox-style1 .company-calendar .fc-row.fc-widget-header {
+      margin: 0 !important; }
+      .mainboxgridbox-style1 .company-calendar .fc-row.fc-widget-header table {
+        margin-bottom: 0 !important; }
+    .mainboxgridbox-style1 .company-calendar .fc-scroller.fc-day-grid-container {
+      overflow: hidden !important; }
+  .mainboxgridbox-style1 .text-image-content-wrapper .text-image-content-holder a {
+    border-radius: 10px;
+    -moz-border-radius: 10px; }
+
 .mainboxgridbox-style3 {
   margin-bottom: 10px; }
   .mainboxgridbox-style3 .calendar-upcoming-events table tr td .date-start {
@@ -5744,6 +5819,9 @@ header {
   text-decoration: none;
   color: #fff !important;
   text-transform: uppercase; }
+
+#shortcode-slide .owl-controls .owl-nav {
+  text-align: right; }
 
 .dwqa-single-question {
   margin-bottom: 50px; }

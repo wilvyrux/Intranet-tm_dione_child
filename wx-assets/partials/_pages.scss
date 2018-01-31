@@ -1185,6 +1185,142 @@
 
 
 
+.mainboxgridbox-style1 {
+    margin-bottom: 10px;
+    margin-top:80px;
+    
+    > div {
+       position: relative;
+        // padding: 0 !important;
+        // background: $color-white;
+        
+        
+        > div {
+              border:1px solid $color-lightgray;
+              // margin: 0 20px !important;
+
+        }
+        
+        // &::after {
+        //     position: absolute;
+        //     content: '';
+        //     width: 100%;
+        //     height: 7px;
+        //     left: 0;
+        //     bottom: 0;
+        //     background: $color-dark;
+        // }
+        
+    }
+    
+    
+    .title-holder {
+        position: relative;
+        background: $color-white;
+        padding: 10px;
+        border-bottom:8px solid $color-dark;
+        margin-top: -80px;
+        
+        &::before {
+            position: absolute;
+            width:0;
+            content: '';
+            height: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-left:10px solid $color-white; 
+            border-top:10px solid transparent; 
+            border-bottom:10px solid transparent; 
+        }
+        
+        h4 {
+            margin: 0;
+            font-size: 1.9em;
+            padding: 10px 85px;
+            color: $color-dark;
+            font-family: $font-primary;
+            text-transform: uppercase;
+            
+        }
+        
+        .icon-holder {
+            background: $color-primary;
+            padding: 20px  0px;
+            width: 70px;
+            text-align: center;
+            height: auto;
+            left: 0 !important;
+            top:0;
+            position:absolute;
+            right:inherit;
+            bottom: -8px;
+            
+            i {
+                color: $color-white;
+                font-size: 2.8em;
+            }
+        }
+    }
+
+
+
+    .company-calendar {
+        margin: 20px !important;
+
+        .fc-toolbar.fc-header-toolbar {
+            &::after {
+                display:block;
+                content:'';
+                clear:both;
+            }
+
+            > div {
+                float: left;
+                width: 100%;
+                clear: both;
+            }
+
+            .fc-left {
+                border-bottom: 1px solid $color-lightgray;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+            }
+           
+        }
+
+        .fc-row.fc-widget-header {
+            margin: 0 !important;
+
+            table {
+                margin-bottom:0 !important;
+            }
+        }
+
+        .fc-scroller.fc-day-grid-container {
+            overflow: hidden !important;
+        }
+
+
+    }
+
+
+   
+    .text-image-content-wrapper {
+        .text-image-content-holder  {
+            a {
+                @include border-radius(10px);
+            }
+        }
+    }
+   
+
+}
+
+
+
+
 .mainboxgridbox-style3 {
     margin-bottom: 10px;
 

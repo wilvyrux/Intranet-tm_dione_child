@@ -138,3 +138,16 @@ header {
     }
     
 }
+
+
+header.header.headroom.headroom--not-top {
+    .main-navigation {
+        ul {
+            li {
+                a {
+                    color:$color-white;
+                }
+            }
+        }
+    }
+}
