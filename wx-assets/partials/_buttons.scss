@@ -141,3 +141,20 @@ a.read-more,
         opacity: .4;
     }
 }
+
+
+.secondary-buttons {
+    padding: 5px;
+    background: $color-primary;
+    color:$color-white;
+    font-size: 0.750em;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    display: block;
+    width: 100px;
+    margin: 15px auto;
+     
+    &:hover {
+        opacity: .5;
+    }
+}

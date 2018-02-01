@@ -1,6 +1,16 @@
 .copyright  {
-    background: $color-gray2;
 
+    > div {
+      @include t-color(24,23,24,1);
+    }
+   
+
+
+    > div {
+        > div {
+            border-top:3px solid $color-primary;
+        }
+    }
 
 }
 
@@ -14,10 +24,15 @@
         margin: 0;
         font-size: 1.8em;   
         font-family: $font-primary;
+        margin-bottom:20px !important;
+        color:$color-primary;
     }
-    
+
+  
     ul {
         li {
+            line-height:24px !important;
+
             a {
                 text-decoration: none;
                 text-transform: uppercase;
@@ -30,9 +45,13 @@
                      @include fontawesome;
                      margin-right: 5px;
                      display: inline-block;
-                     color: $color-primary;
+                     color: $color-white;
+
+                     display:none;
                 }
             }
+
+
         }
     }
 

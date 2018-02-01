@@ -5,6 +5,7 @@ function get_mata( $post_id, $meta_key )
     echo get_post_meta( $post_id, $meta_key, true ); 
 }
 
+
 /*<----// WX Basic Needs //---->*/
 
 
@@ -28,12 +29,13 @@ require_once get_theme_file_path() . '/custom-php/VS-Shortcodes/vs-shortcode-hea
 require_once get_theme_file_path() . '/custom-php/VS-Shortcodes/vs-shortcode-image_content.php';
 
 
-
+require_once get_theme_file_path() . '/custom-php/wx-shortcode-videos.php';
 require_once get_theme_file_path() . '/custom-php/wx-shotcode-news4slider.php';
-
 
 /*<----//  //---->*/
 
 require_once get_theme_file_path() . '/custom-php/rty_functions.php';
+
+
 
 ?>

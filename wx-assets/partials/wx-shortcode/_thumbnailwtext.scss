@@ -1,8 +1,8 @@
 @mixin color-gradient {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+58&0+0,0.65+58 */
-background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 58%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 58%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 58%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+48,000000+100&0+0,0.65+98 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.32) 48%, rgba(0,0,0,0.65) 98%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.32) 48%,rgba(0,0,0,0.65) 98%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.32) 48%,rgba(0,0,0,0.65) 98%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 
 
@@ -12,114 +12,112 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .text-image-wrapper {
     margin-bottom: 25px;
     position: relative;
-    
+    overflow: hidden;
+
     .text-image-holder {
         position: relative;
-        overflow: hidden;
-        background: $color-black;
-        
-        
-        &:before {
-            content: '';
-            width: 95%;
-            height: 94%;
-            border: 2px solid #fff;
+        @include transition(.3s);
+
+
+        &::before {
+            width: 100%;
+            height: 100px;
+            @include color-gradient;
             position: absolute;
-            z-index: 2;
+            bottom: 0;
+            left: 0;
+            content: '';
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h4 {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            margin: 0;
+            padding: 20px;
+            text-transform: uppercase;
+            color: $color-white;
+            font-size: 1.875em;
+            @include transition(1s);
+            font-weight: $light;
+            
+        }
+
+        .overlay {
+            position: absolute;
             left: 0;
             top: 0;
-            margin: auto;
-            right: 0;
-            bottom: 0;
-        }
-        
-        div {
-            
-            
-                img {
-//                    width:100px;
-                }
-            
-                padding: 0 !important;
-                
-                a {
-                    display: block;
-                    font-size: 1.4em;
-                    margin-bottom: 10px;
-                    color:$color-white;
-                    margin-top: 5px;
-                    font-weight: $medium;
-                    text-decoration: none;
-                    
-                    &:hover {
-                        color: $color-secondary;
-                    }
-                }
-                
-        }
-        
-        
-        .text-content-description {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-//            @include t-black(.8);
             width: 100%;
-            padding: 30px !important;
-            text-align: left;
-            z-index: 4;
-            
-           @include transform_translate(0,40%);
-            
-            h2 {
-                font-size: 1.2em;
-                margin: 0;
-                padding: 0;
-                text-transform: uppercase;
-                color: $color-primary;
-                font-weight: $bold;
-                line-height: 24px;
-            }
-            
-            .description-content {
-                color: $color-white;
-                margin-bottom: 15px;
-                line-height: 15px;
-                font-size: .8em;
-            }
-            
-            
-        }
-        
-        &:hover {
-            .text-content-description {
-                @include transform_translate(0,0%);
-                cursor: pointer;
-            }
-            
-            img {
-                opacity: .5;
-            }
-        }
-        
-        
-        &::after {
-            display: block;
-            clear: both;
-            content: '';
-        }
-        
-        
-        
-    }
-    
+            height: 100%;
+            @include t-black(.8);
+//            display: none;
+            @include transition(.3s);
+            opacity: 0;
 
-    
+            .overlay-holder {
+                width: 80%;
+                position: absolute;
+                top: 0;
+                height: 75px;
+                bottom: 0;
+                margin: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
+                color: $color-white;
+
+                h5 {
+                    text-transform: uppercase;
+                    color:$color-primary;
+                }
+
+                p {
+                    display: inline;
+                    color: $color-white;
+                }
+
+                .description {
+                      overflow: hidden;
+                       text-overflow: ellipsis;
+                       display: -webkit-box;
+                       line-height: 16px;     /* fallback */
+                       max-height: 32px;      /* fallback */
+                       -webkit-line-clamp: 2; /* number of lines to show */
+                       -webkit-box-orient: vertical;
+                }
+
+            }
+
+
+        }
+
+
+        &:hover {
+
+            .overlay {
+                display: block;
+                opacity: 1;
+            }
+
+            h4 {
+                transform: translate(0,100%)
+            }
+        }
+
+    }
+
+
+
 }
 
-    
+
 .vc_col-sm-3 {
-    
+
     .text-image-wrapper {
 
         .text-image-holder {
@@ -129,8 +127,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
             }
 
         }
-        
+
     }
 
 }
-    

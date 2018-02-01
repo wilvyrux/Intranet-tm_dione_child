@@ -4340,6 +4340,19 @@ a.read-more,
   .primary-button:hover {
     opacity: .4; }
 
+.secondary-buttons {
+  padding: 5px;
+  background: #f36a22 !important;
+  color: #fff !important;
+  font-size: 0.750em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  display: block;
+  width: 100px;
+  margin: 15px auto; }
+  .secondary-buttons:hover {
+    opacity: .5; }
+
 .vc_masonry_grid .news-content div {
   margin: 0;
   color: #fff !important; }
@@ -4447,8 +4460,11 @@ header {
 header.header.headroom.headroom--not-top .main-navigation ul li a {
   color: #fff !important; }
 
-.copyright {
-  background: #282828 !important; }
+.copyright > div {
+  background: #181718; }
+
+.copyright > div > div {
+  border-top: 3px solid #f36a22 !important; }
 
 .site-footer {
   padding: 50px 0; }
@@ -4456,148 +4472,30 @@ header.header.headroom.headroom--not-top .main-navigation ul li a {
     display: block;
     margin: 0;
     font-size: 1.8em;
-    font-family: "Oswald", sans-serif !important; }
-  .site-footer ul li a {
-    text-decoration: none;
-    text-transform: uppercase; }
-    .site-footer ul li a:hover {
-      color: #f36a22 !important; }
-    .site-footer ul li a:before {
-      content: "\f105";
-      display: inline-block;
-      font: normal normal normal 14px/1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      margin-right: 5px;
-      display: inline-block;
-      color: #f36a22 !important; }
+    font-family: "Oswald", sans-serif !important;
+    margin-bottom: 20px !important;
+    color: #f36a22 !important; }
+  .site-footer ul li {
+    line-height: 24px !important; }
+    .site-footer ul li a {
+      text-decoration: none;
+      text-transform: uppercase; }
+      .site-footer ul li a:hover {
+        color: #f36a22 !important; }
+      .site-footer ul li a:before {
+        content: "\f105";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin-right: 5px;
+        display: inline-block;
+        color: #fff !important;
+        display: none; }
   .site-footer #media_image-3 img {
     width: 100%; }
-
-.dwqa-single-question .dwqa-question-meta a,
-.dwqa-single-question .dwqa-answers a {
-  color: #f36a22 !important; }
-
-.dwqa-single-question .dwqa-answers-login {
-  background: #ebebeb !important;
-  padding: 5px 20px;
-  margin-bottom: 50px; }
-  .dwqa-single-question .dwqa-answers-login .dwqa-answers-login-title {
-    margin: 0;
-    padding: 0;
-    border: 0; }
-    .dwqa-single-question .dwqa-answers-login .dwqa-answers-login-title p {
-      padding: 10px 0;
-      display: block;
-      font-size: 1.2em;
-      font-family: "Oswald", sans-serif !important; }
-  .dwqa-single-question .dwqa-answers-login #loginform .login-username,
-  .dwqa-single-question .dwqa-answers-login #loginform .login-password {
-    width: 50%;
-    float: left;
-    padding: 5px; }
-  .dwqa-single-question .dwqa-answers-login #loginform .login-remember {
-    display: block;
-    clear: both;
-    padding: 5px; }
-    .dwqa-single-question .dwqa-answers-login #loginform .login-remember label {
-      display: block;
-      position: relative;
-      padding-left: 20px; }
-      .dwqa-single-question .dwqa-answers-login #loginform .login-remember label input {
-        position: absolute;
-        left: 0 !important;
-        top: 0;
-        width: 10px; }
-
-.dwqa-questions-archive {
-  margin-bottom: 100px; }
-  .dwqa-questions-archive .dwqa-search > i {
-    display: none; }
-  .dwqa-questions-archive .dwqa-question-filter {
-    padding: 30px 0; }
-    .dwqa-questions-archive .dwqa-question-filter span {
-      font-size: 1em;
-      text-transform: uppercase; }
-    .dwqa-questions-archive .dwqa-question-filter a {
-      background: #262626 !important;
-      margin: 0;
-      padding: 2px 8px;
-      margin: 2px;
-      color: #fff;
-      text-decoration: none; }
-      .dwqa-questions-archive .dwqa-question-filter a:hover {
-        background: #f36a22 !important; }
-  .dwqa-questions-archive .dwqa-questions-list {
-    border: 0 !important; }
-    .dwqa-questions-archive .dwqa-questions-list .dwqa-question-item {
-      border: 0;
-      margin-bottom: 15px;
-      border-left: 10px solid #f36a22 !important; }
-      .dwqa-questions-archive .dwqa-questions-list .dwqa-question-item::before {
-        content: '';
-        width: 0;
-        height: 0;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        top: 0;
-        margin: auto;
-        border-top: 10px solid transparent;
-        border-left: 10px solid #f36a22 !important;
-        border-bottom: 10px solid transparent; }
-      .dwqa-questions-archive .dwqa-questions-list .dwqa-question-item .dwqa-question-title a {
-        font-size: 1.2em;
-        font-family: "Oswald", sans-serif !important;
-        color: #262626 !important;
-        text-transform: uppercase; }
-
-.fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.company-event-entry {
-  background: #f36a22 !important;
-  border: 0;
-  padding: 5px;
-  cursor: pointer;
-  display: block; }
-
-#colorbox {
-  left: 0 !important;
-  position: fixed !important;
-  width: 100% !important;
-  height: 100% !important;
-  right: 0;
-  margin: auto !important;
-  top: 20px !important;
-  overflow: scroll;
-  background: rgba(0, 0, 0, 0.8); }
-  #colorbox #cboxWrapper {
-    width: 80% !important;
-    outline: 1px solid;
-    margin: auto;
-    left: 0;
-    right: 0;
-    padding-top: 5%;
-    height: auto !important; }
-    #colorbox #cboxWrapper #cboxContent {
-      width: 100% !important;
-      height: 100% !important; }
-      #colorbox #cboxWrapper #cboxContent div {
-        width: 100% !important; }
-      #colorbox #cboxWrapper #cboxContent #cboxLoadedContent {
-        width: 100%;
-        padding: 20px; }
-
-.company-calendar .fc-left h2 {
-  font-size: 2.5em;
-  font-family: "Oswald", sans-serif !important;
-  text-transform: uppercase; }
-
-.company-calendar .fc-day-header.fc-widget-header {
-  background: #262626 !important;
-  color: #fff !important;
-  padding: 10px;
-  text-transform: uppercase; }
 
 .wpb_tour_tabs_wrapper .wpb_tabs_nav {
   border-bottom: 3px solid #262626 !important; }
@@ -4612,81 +4510,6 @@ header.header.headroom.headroom--not-top .main-navigation ul li a {
 
 .wpb_tour_tabs_wrapper .ui-tabs-panel {
   background: #fff !important; }
-
-#file-manager-wrapper ul {
-  margin: 0; }
-  #file-manager-wrapper ul li::before {
-    display: none; }
-
-.file-uploader-wrap .fileinput-button {
-  width: 100% !important;
-  margin-bottom: 20px !important;
-  background: #262626 !important; }
-
-.page-bar {
-  background: #f36a22 !important;
-  margin-bottom: 20px !important; }
-  .page-bar ul {
-    background: transparent; }
-    .page-bar ul li {
-      margin-right: 10px; }
-      .page-bar ul li a {
-        color: #fff !important;
-        font-family: "Oswald", sans-serif !important;
-        font-size: 1.5em;
-        text-decoration: none; }
-        .page-bar ul li a:hover {
-          color: #262626 !important; }
-        .page-bar ul li a i {
-          margin-right: 5px; }
-
-.folder-file-container .file-list-items li {
-  width: 25%;
-  display: inline-block;
-  text-align: left;
-  padding: 10px;
-  position: relative;
-  margin-bottom: 20px; }
-  .folder-file-container .file-list-items li a {
-    text-decoration: none; }
-  .folder-file-container .file-list-items li .status {
-    position: absolute;
-    top: 0;
-    background: #262626 !important;
-    width: 20px;
-    text-align: center; }
-    .folder-file-container .file-list-items li .status a {
-      color: #fff !important; }
-  .folder-file-container .file-list-items li .file-name {
-    font-size: 1.2em;
-    text-transform: uppercase;
-    color: #fff !important;
-    background: #f36a22 !important;
-    text-align: left;
-    clear: both;
-    padding: 5px;
-    font-size: .9em; }
-  .folder-file-container .file-list-items li .file-thumb {
-    width: 50px;
-    margin: auto;
-    height: 50px;
-    float: left;
-    margin-right: 10px; }
-    .folder-file-container .file-list-items li .file-thumb img {
-      height: 100%; }
-  .folder-file-container .file-list-items li .file-icon i {
-    display: none; }
-  .folder-file-container .file-list-items li .file-meta-info {
-    font-size: .7em;
-    padding: 2px; }
-    .folder-file-container .file-list-items li .file-meta-info span {
-      display: block;
-      color: #262626 !important; }
-
-.folder-file-container .file-list-items::after {
-  display: block;
-  content: '';
-  clear: both; }
 
 .jaf-file-table tr .file-thumb {
   width: 50px;
@@ -5416,44 +5239,6 @@ header.header.headroom.headroom--not-top .main-navigation ul li a {
   .document-lists-wrapper .document-holder li.active .child-document-holder.active ul {
     display: block; }
 
-.forum-wrapper {
-  padding-top: 25px; }
-  .forum-wrapper table, .forum-wrapper th, .forum-wrapper td {
-    border: 0; }
-  .forum-wrapper table tr {
-    border-bottom: 1px solid #ddd !important; }
-    .forum-wrapper table tr td {
-      padding: 15px 25px; }
-      .forum-wrapper table tr td h4, .forum-wrapper table tr td p {
-        margin: 0; }
-      .forum-wrapper table tr td h4 a {
-        display: block;
-        text-decoration: none;
-        color: #262626 !important;
-        font-size: 1em;
-        text-transform: uppercase;
-        line-height: 20px;
-        font-family: "Roboto", sans-serif !important;
-        font-weight: 700; }
-        .forum-wrapper table tr td h4 a:hover {
-          opacity: .4;
-          transform: translate(2%, 0);
-          -moz-transform: translate(2%, 0);
-          -webkit-transform: translate(2%, 0);
-          -o-transform: translate(2%, 0); }
-      .forum-wrapper table tr td p {
-        font-size: .9em;
-        font-family: "Roboto", sans-serif !important; }
-      .forum-wrapper table tr td:first-child {
-        padding-right: 0; }
-      .forum-wrapper table tr td:last-child {
-        width: 20%;
-        text-align: right;
-        padding-left: 0; }
-      .forum-wrapper table tr td img {
-        border-radius: 100%;
-        border: 1px solid #777474 !important; }
-
 .notifications-wrapper {
   width: 100% !important;
   overflow: hidden;
@@ -5724,6 +5509,20 @@ header.header.headroom.headroom--not-top .main-navigation ul li a {
     .mainboxgridbox-style2 #hmt_cpt_calender-2 #wp-calendar tfoot {
       display: none; }
 
+.main-wrapper-video {
+  margin-top: 20px; }
+  .main-wrapper-video .featured-videos {
+    height: 300px; }
+    .main-wrapper-video .featured-videos div {
+      width: 100%;
+      height: 100%; }
+    .main-wrapper-video .featured-videos::after {
+      display: block;
+      clear: both;
+      content: ''; }
+  .main-wrapper-video .video-list label {
+    padding: 10px 0px; }
+
 .inner-holder.slick-slide {
   position: relative; }
 
@@ -5762,9 +5561,13 @@ header.header.headroom.headroom--not-top .main-navigation ul li a {
       color: #fff !important;
       line-height: 14px;
       font-size: .7em; }
-    .news-slider-wrapper .content-holder .news-date {
-      color: #f36a22 !important;
-      font-size: .9em; }
+    .news-slider-wrapper .content-holder .news-title {
+      color: #fff !important;
+      text-decoration: none; }
+      .news-slider-wrapper .content-holder .news-title .news-date {
+        display: block;
+        font-weight: 700;
+        font-size: .9em; }
 
 .sliderheight .news-slider-wrapper {
   height: 500px;
@@ -5818,10 +5621,24 @@ header.header.headroom.headroom--not-top .main-navigation ul li a {
   padding: 10px;
   text-decoration: none;
   color: #fff !important;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 700; }
+  .news-slider-holder .news-title .news-date {
+    display: block;
+    font-weight: normal;
+    font-size: .9em;
+    font-style: italic; }
 
 #shortcode-slide .owl-controls .owl-nav {
   text-align: right; }
+  #shortcode-slide .owl-controls .owl-nav > div {
+    background: #f36a22 !important;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    width: 30px;
+    text-align: center; }
+    #shortcode-slide .owl-controls .owl-nav > div i {
+      font-weight: 700; }
 
 .dwqa-single-question {
   margin-bottom: 50px; }
@@ -5855,6 +5672,265 @@ header.header.headroom.headroom--not-top .main-navigation ul li a {
   .dwqa-breadcrumbs .dwqa-current {
     color: #f36a22 !important; }
 
+.fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.company-event-entry {
+  background: #f36a22 !important;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+  display: block; }
+
+#colorbox {
+  left: 0 !important;
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  right: 0;
+  margin: auto !important;
+  top: 20px !important;
+  overflow: scroll;
+  background: rgba(0, 0, 0, 0.8); }
+  #colorbox #cboxWrapper {
+    width: 80% !important;
+    outline: 1px solid;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding-top: 5%;
+    height: auto !important; }
+    #colorbox #cboxWrapper #cboxContent {
+      width: 100% !important;
+      height: 100% !important; }
+      #colorbox #cboxWrapper #cboxContent div {
+        width: 100% !important; }
+      #colorbox #cboxWrapper #cboxContent #cboxLoadedContent {
+        width: 100%;
+        padding: 20px; }
+
+.company-calendar .fc-left h2 {
+  font-size: 2.5em;
+  font-family: "Oswald", sans-serif !important;
+  text-transform: uppercase; }
+
+.company-calendar .fc-day-header.fc-widget-header {
+  background: #262626 !important;
+  color: #fff !important;
+  padding: 10px;
+  text-transform: uppercase; }
+
+#file-manager-wrapper ul {
+  margin: 0; }
+  #file-manager-wrapper ul li::before {
+    display: none; }
+
+.file-uploader-wrap .fileinput-button {
+  width: 100% !important;
+  margin-bottom: 20px !important;
+  background: #262626 !important; }
+
+.page-bar {
+  background: #f36a22 !important;
+  margin-bottom: 20px !important; }
+  .page-bar ul {
+    background: transparent; }
+    .page-bar ul li {
+      margin-right: 10px; }
+      .page-bar ul li a {
+        color: #fff !important;
+        font-family: "Oswald", sans-serif !important;
+        font-size: 1.5em;
+        text-decoration: none; }
+        .page-bar ul li a:hover {
+          color: #262626 !important; }
+        .page-bar ul li a i {
+          margin-right: 5px; }
+
+.folder-file-container .file-list-items li {
+  width: 25%;
+  display: inline-block;
+  text-align: left;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px; }
+  .folder-file-container .file-list-items li a {
+    text-decoration: none; }
+  .folder-file-container .file-list-items li .status {
+    position: absolute;
+    top: 0;
+    background: #262626 !important;
+    width: 20px;
+    text-align: center; }
+    .folder-file-container .file-list-items li .status a {
+      color: #fff !important; }
+  .folder-file-container .file-list-items li .file-name {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #fff !important;
+    background: #262626 !important;
+    text-align: left;
+    clear: both;
+    padding: 2px 10px;
+    font-size: .8em; }
+  .folder-file-container .file-list-items li a.file-element {
+    display: block;
+    overflow: auto;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 1px solid #262626 !important;
+    cursor: pointer; }
+  .folder-file-container .file-list-items li .file-thumb {
+    width: 50px;
+    margin: auto;
+    height: 50px;
+    float: left;
+    margin-right: 10px; }
+    .folder-file-container .file-list-items li .file-thumb img {
+      height: 100%; }
+  .folder-file-container .file-list-items li .file-icon i {
+    display: none; }
+  .folder-file-container .file-list-items li .file-meta-info {
+    font-size: .7em;
+    padding: 2px; }
+    .folder-file-container .file-list-items li .file-meta-info span {
+      display: block;
+      color: #262626 !important; }
+
+.folder-file-container .file-list-items:hover {
+  opacity: .6; }
+
+.folder-file-container .file-list-items::after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.forum-wrapper {
+  padding-top: 25px; }
+  .forum-wrapper table, .forum-wrapper th, .forum-wrapper td {
+    border: 0; }
+  .forum-wrapper table tr {
+    border-bottom: 1px solid #ddd !important; }
+    .forum-wrapper table tr td {
+      padding: 15px 25px; }
+      .forum-wrapper table tr td h4, .forum-wrapper table tr td p {
+        margin: 0; }
+      .forum-wrapper table tr td h4 a {
+        display: block;
+        text-decoration: none;
+        color: #262626 !important;
+        font-size: 1em;
+        text-transform: uppercase;
+        line-height: 20px;
+        font-family: "Roboto", sans-serif !important;
+        font-weight: 700; }
+        .forum-wrapper table tr td h4 a:hover {
+          opacity: .4;
+          transform: translate(2%, 0);
+          -moz-transform: translate(2%, 0);
+          -webkit-transform: translate(2%, 0);
+          -o-transform: translate(2%, 0); }
+      .forum-wrapper table tr td p {
+        font-size: .9em;
+        font-family: "Roboto", sans-serif !important; }
+      .forum-wrapper table tr td:first-child {
+        padding-right: 0; }
+      .forum-wrapper table tr td:last-child {
+        width: 20%;
+        text-align: right;
+        padding-left: 0; }
+      .forum-wrapper table tr td img {
+        border-radius: 100%;
+        border: 1px solid #777474 !important; }
+
+.mainboxgridbox-style1 .forum-wrapper table tr td:first-child {
+  padding-right: 0;
+  width: 5%; }
+
+.mainboxgridbox-style1 .forum-wrapper table tr td:last-child {
+  text-align: left !important;
+  padding-left: 0; }
+
+.mainboxgridbox-style1 .forum-wrapper table tr td img {
+  border-radius: 10px;
+  border: 1px solid #777474 !important; }
+
+.dwqa-single-question .dwqa-question-meta a,
+.dwqa-single-question .dwqa-answers a {
+  color: #f36a22 !important; }
+
+.dwqa-single-question .dwqa-answers-login {
+  background: #ebebeb !important;
+  padding: 5px 20px;
+  margin-bottom: 50px; }
+  .dwqa-single-question .dwqa-answers-login .dwqa-answers-login-title {
+    margin: 0;
+    padding: 0;
+    border: 0; }
+    .dwqa-single-question .dwqa-answers-login .dwqa-answers-login-title p {
+      padding: 10px 0;
+      display: block;
+      font-size: 1.2em;
+      font-family: "Oswald", sans-serif !important; }
+  .dwqa-single-question .dwqa-answers-login #loginform .login-username,
+  .dwqa-single-question .dwqa-answers-login #loginform .login-password {
+    width: 50%;
+    float: left;
+    padding: 5px; }
+  .dwqa-single-question .dwqa-answers-login #loginform .login-remember {
+    display: block;
+    clear: both;
+    padding: 5px; }
+    .dwqa-single-question .dwqa-answers-login #loginform .login-remember label {
+      display: block;
+      position: relative;
+      padding-left: 20px; }
+      .dwqa-single-question .dwqa-answers-login #loginform .login-remember label input {
+        position: absolute;
+        left: 0 !important;
+        top: 0;
+        width: 10px; }
+
+.dwqa-questions-archive {
+  margin-bottom: 100px; }
+  .dwqa-questions-archive .dwqa-search > i {
+    display: none; }
+  .dwqa-questions-archive .dwqa-question-filter {
+    padding: 30px 0; }
+    .dwqa-questions-archive .dwqa-question-filter span {
+      font-size: 1em;
+      text-transform: uppercase; }
+    .dwqa-questions-archive .dwqa-question-filter a {
+      background: #262626 !important;
+      margin: 0;
+      padding: 2px 8px;
+      margin: 2px;
+      color: #fff;
+      text-decoration: none; }
+      .dwqa-questions-archive .dwqa-question-filter a:hover {
+        background: #f36a22 !important; }
+  .dwqa-questions-archive .dwqa-questions-list {
+    border: 0 !important; }
+    .dwqa-questions-archive .dwqa-questions-list .dwqa-question-item {
+      border: 0;
+      margin-bottom: 15px;
+      border-left: 10px solid #f36a22 !important; }
+      .dwqa-questions-archive .dwqa-questions-list .dwqa-question-item::before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        border-top: 10px solid transparent;
+        border-left: 10px solid #f36a22 !important;
+        border-bottom: 10px solid transparent; }
+      .dwqa-questions-archive .dwqa-questions-list .dwqa-question-item .dwqa-question-title a {
+        font-size: 1.2em;
+        font-family: "Oswald", sans-serif !important;
+        color: #262626 !important;
+        text-transform: uppercase; }
+
 .wx-heading.align-left,
 .wx-button.align-left {
   text-align: left; }
@@ -5871,7 +5947,7 @@ header.header.headroom.headroom--not-top .main-navigation ul li a {
   text-decoration: none !important;
   display: block;
   margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 55px; }
   @media only screen and (max-width: 1000px) {
     .wx-heading {
       margin-bottom: 10px; } }
@@ -5887,24 +5963,20 @@ header.header.headroom.headroom--not-top .main-navigation ul li a {
     text-transform: uppercase;
     font-family: "Oswald", sans-serif !important;
     position: relative; }
-    .wx-heading .primary-heading::before,
-    .wx-heading .secondary-heading::before,
-    .wx-heading .third-heading::before,
-    .wx-heading .fourth-heading::before {
-      content: '';
-      display: inline-block;
-      height: 21px;
-      width: 114px;
-      bottom: -25px;
-      /* margin-right: 15px; */
-      /* margin-bottom: -20px; */
-      margin: auto !important;
-      right: 0;
-      left: 0;
-      position: absolute; }
   .wx-heading .primary-heading {
-    font-size: 2.5em;
-    text-transform: uppercase; }
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 15px; }
+    .wx-heading .primary-heading::after {
+      width: 300px;
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      display: block;
+      background: #fff !important; }
   .wx-heading .secondary-heading {
     font-size: 2.5em;
     text-transform: uppercase;
@@ -6020,72 +6092,86 @@ header.header.headroom.headroom--not-top .main-navigation ul li a {
 
 .text-image-wrapper {
   margin-bottom: 25px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .text-image-wrapper .text-image-holder {
     position: relative;
-    overflow: hidden;
-    background: #000000 !important; }
-    .text-image-wrapper .text-image-holder:before {
-      content: '';
-      width: 95%;
-      height: 94%;
-      border: 2px solid #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .text-image-wrapper .text-image-holder::before {
+      width: 100%;
+      height: 100px;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+48,000000+100&0+0,0.65+98 */
+      /* FF3.6-15 */
+      /* Chrome10-25,Safari5.1-6 */
+      background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(48%, rgba(0, 0, 0, 0.32)), color-stop(98%, rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
+      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.32) 48%, rgba(0, 0, 0, 0.65) 98%, rgba(0, 0, 0, 0.65) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+      /* IE6-9 */
       position: absolute;
-      z-index: 2;
+      bottom: 0;
       left: 0;
-      top: 0;
-      margin: auto;
-      right: 0;
-      bottom: 0; }
-    .text-image-wrapper .text-image-holder div {
-      padding: 0 !important; }
-      .text-image-wrapper .text-image-holder div a {
-        display: block;
-        font-size: 1.4em;
-        margin-bottom: 10px;
-        color: #fff !important;
-        margin-top: 5px;
-        font-weight: 500;
-        text-decoration: none; }
-        .text-image-wrapper .text-image-holder div a:hover {
-          color: #262626 !important; }
-    .text-image-wrapper .text-image-holder .text-content-description {
+      content: ''; }
+    .text-image-wrapper .text-image-holder img {
+      width: 100%; }
+    .text-image-wrapper .text-image-holder h4 {
       position: absolute;
-      left: 0;
       bottom: 0;
       width: 100%;
-      padding: 30px !important;
-      text-align: left;
-      z-index: 4;
-      transform: translate(0, 40%);
-      -moz-transform: translate(0, 40%);
-      -webkit-transform: translate(0, 40%);
-      -o-transform: translate(0, 40%); }
-      .text-image-wrapper .text-image-holder .text-content-description h2 {
-        font-size: 1.2em;
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-        color: #f36a22 !important;
-        font-weight: 700;
-        line-height: 24px; }
-      .text-image-wrapper .text-image-holder .text-content-description .description-content {
-        color: #fff !important;
-        margin-bottom: 15px;
-        line-height: 15px;
-        font-size: .8em; }
-    .text-image-wrapper .text-image-holder:hover .text-content-description {
-      transform: translate(0, 0%);
-      -moz-transform: translate(0, 0%);
-      -webkit-transform: translate(0, 0%);
-      -o-transform: translate(0, 0%);
-      cursor: pointer; }
-    .text-image-wrapper .text-image-holder:hover img {
-      opacity: .5; }
-    .text-image-wrapper .text-image-holder::after {
+      left: 0;
+      margin: 0;
+      padding: 20px;
+      text-transform: uppercase;
+      color: #fff !important;
+      font-size: 1.875em;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      font-weight: 300; }
+    .text-image-wrapper .text-image-holder .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      opacity: 0; }
+      .text-image-wrapper .text-image-holder .overlay .overlay-holder {
+        width: 80%;
+        position: absolute;
+        top: 0;
+        height: 75px;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff !important; }
+        .text-image-wrapper .text-image-holder .overlay .overlay-holder h5 {
+          text-transform: uppercase;
+          color: #f36a22 !important; }
+        .text-image-wrapper .text-image-holder .overlay .overlay-holder p {
+          display: inline;
+          color: #fff !important; }
+        .text-image-wrapper .text-image-holder .overlay .overlay-holder .description {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 16px;
+          /* fallback */
+          max-height: 32px;
+          /* fallback */
+          -webkit-line-clamp: 2;
+          /* number of lines to show */
+          -webkit-box-orient: vertical; }
+    .text-image-wrapper .text-image-holder:hover .overlay {
       display: block;
-      clear: both;
-      content: ''; }
+      opacity: 1; }
+    .text-image-wrapper .text-image-holder:hover h4 {
+      -webkit-transform: translate(0, 100%);
+              transform: translate(0, 100%); }
 
 .vc_col-sm-3 .text-image-wrapper .text-image-holder h4 {
   font-size: 1.3em; }

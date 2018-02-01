@@ -1,0 +1,253 @@
+
+
+// forums
+.forum-wrapper {
+    padding-top: 25px;
+    
+    table, th, td {
+        border: 0;
+    }
+    
+    table {
+        tr {
+            border-bottom: 1px solid $color-lightgray3;
+            
+            td {
+                padding: 15px 25px;
+                
+                h4,p {
+                    margin: 0;
+                }
+                
+                h4 {
+                  
+                    
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        color: $color-secondary;
+                         font-size: 1em;
+                        text-transform: uppercase;
+                        line-height: 20px;
+                        font-family: $font-secondary;
+                        font-weight: $bold;
+                        
+                        &:hover {
+                            opacity: .4;
+                            @include transform_translate(2%,0);
+                        }
+                    }
+                }
+                
+                p {
+                    font-size: .9em;
+                    font-family: $font-secondary;
+                }
+                
+                &:first-child {
+                    padding-right: 0;
+                }
+                
+                &:last-child {
+                    width: 20%;
+                    text-align: right;
+                    padding-left: 0;
+                    
+                }
+                
+                img {
+                    border-radius: 100%;
+                    border: 1px solid $color-gray;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+.mainboxgridbox-style1 {
+    .forum-wrapper {
+      
+    
+        table {
+            tr {
+                
+                td {
+                  
+                    
+                    &:first-child {
+                        padding-right: 0;
+                        width: 5%;
+                    }
+                    
+                    &:last-child {
+                       
+                        text-align: left !important;
+                        padding-left: 0;
+                        
+                    }
+                    
+                    img {
+                        border-radius: 10px;
+                        border: 1px solid $color-gray;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}
+
+
+
+
+//FORUMS
+.dwqa-single-question {
+   
+    
+    .dwqa-question-meta,
+    .dwqa-answers
+    {
+        a {
+            color: $color-primary;
+        }
+    }
+    
+    .dwqa-answers-login {
+        background: $color-lightgray;
+        padding: 5px 20px;
+        margin-bottom: 50px;
+        
+        .dwqa-answers-login-title {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            
+            p {
+                padding: 10px 0;
+                display: block;
+                font-size: 1.2em;
+                font-family: $font-primary;
+            }
+        }
+        
+        #loginform {
+            
+            
+            .login-username, 
+            .login-password {
+                width: 50%;
+                float: left;
+                padding: 5px;
+            }
+            
+            
+            .login-remember {
+                display: block;
+                clear: both;
+                padding: 5px;
+                
+                label {
+                    display: block;
+                    position: relative;
+                    padding-left: 20px;
+                    
+                    input  {
+                        position: absolute;
+                        left: 0 !important;
+                        top: 0;
+                        width: 10px;
+                    }
+
+                }
+                
+            } 
+             
+            
+        }
+    }
+    
+    
+    
+    
+    
+    
+}   
+
+
+//FILTER FORUM
+.dwqa-questions-archive {
+    margin-bottom: 100px;
+    
+    
+    .dwqa-search {
+        
+        > i {
+            display: none;
+        }
+    }
+    
+    .dwqa-question-filter {
+        padding: 30px 0;
+
+        span {
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+        
+        a {
+            background: $color-secondary;
+            margin: 0;
+            padding: 2px 8px;
+            margin: 2px;
+            color: #fff;
+            text-decoration: none;
+            
+            &:hover  {
+                background: $color-primary;
+            }
+        }
+    }
+    
+    
+    
+    .dwqa-questions-list {
+        border: 0 !important;
+        
+          .dwqa-question-item  {
+                border: 0;
+                margin-bottom: 15px;
+                border-left:10px solid $color-primary; 
+              
+                  &::before {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        top: 0;
+                        margin: auto;
+                        border-top: 10px solid transparent;
+                        border-left: 10px solid $color-primary;
+                        border-bottom: 10px solid transparent;
+                  }
+
+                .dwqa-question-title {
+                    a {
+                        font-size: 1.2em;
+                        font-family: $font-primary;
+                        color: $color-secondary;
+                        text-transform: uppercase;
+                    }
+                } 
+            }
+        
+        
+    }
+  
+    
+}

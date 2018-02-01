@@ -78,6 +78,7 @@ if ( Kirki::get_option( 'tm-dione', 'footer_parallax_enable' ) == 1 ) {
 
 					<?php if(Kirki::get_option( 'tm-dione', 'copyright_display' ) == 'col-md-6'): ?>
 						<div class="<?php echo esc_attr(Kirki::get_option( 'tm-dione', 'copyright_display' )) ?> col-xs-center copyright_text"><?php echo html_entity_decode( Kirki::get_option( 'tm-dione', 'copyright_text' ) ); ?>
+
 						</div>
 						<?php if ( Kirki::get_option( 'tm-dione', 'copyright_social_menu_enable' ) == 1 ) { ?>
 							<div class="<?php echo esc_attr(Kirki::get_option( 'tm-dione', 'copyright_display' )) ?> col-xs-center text-right">
@@ -93,6 +94,7 @@ if ( Kirki::get_option( 'tm-dione', 'footer_parallax_enable' ) == 1 ) {
 					<?php else: ?>
 						<div class="<?php echo esc_attr(Kirki::get_option( 'tm-dione', 'copyright_display' )) ?> col-xs-center copyright_text">
 							<?php echo html_entity_decode( Kirki::get_option( 'tm-dione', 'copyright_text' ) ); ?>
+							
 							<?php if ( Kirki::get_option( 'tm-dione', 'copyright_social_menu_enable' ) == 1 ) { ?>
 								<div class="social">
 									<?php wp_nav_menu( array(
@@ -102,6 +104,8 @@ if ( Kirki::get_option( 'tm-dione', 'footer_parallax_enable' ) == 1 ) {
 									) ); ?>
 								</div>
 							<?php } ?>
+
+
 						</div>
 					<?php endif; ?>
 				</div>

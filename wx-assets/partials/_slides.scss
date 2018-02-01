@@ -52,10 +52,25 @@
             font-size: .7em;
         }
         
-        .news-date {
-            color: $color-primary;
-            font-size: .9em;
-        }
+        // .news-date {
+        //     color: $color-primary;
+        //     font-size: .9em;
+        // }
+
+        .news-title {
+            color:$color-white;
+            text-decoration:none;
+
+             .news-date {
+                display: block;
+                font-weight: $bold;
+                font-size: .9em; 
+            }
+
+        } 
+
+       
+
     }
 }
 
@@ -159,6 +174,16 @@
             text-decoration: none;
             color: $color-white;
             text-transform: uppercase;
+            font-weight:$bold;
+
+             .news-date {
+                display: block;
+                font-weight: normal;
+                font-size: .9em; 
+                font-style:italic;
+            }
+
+       
         }
 
 }
@@ -168,6 +193,17 @@
     .owl-controls {
         .owl-nav {
             text-align:right;
+
+            > div {
+                background:$color-primary;
+                @include border-radius(0);
+                width: 30px;
+                text-align: center; 
+
+                i {
+                    font-weight:$bold;
+                }
+            }
         }
-    }
+    } 
 }

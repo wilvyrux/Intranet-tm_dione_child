@@ -7,3 +7,66 @@ Author URI: http://thememove.com/
 Version: 1.4
 Template: tm-dione
 */
+
+/*VIDEOS*/
+.video_holder {
+    background: transparent;
+    border: 1px solid #dddddd;
+    margin-bottom: 20px;
+}
+
+.video-title {
+    background: #121212;
+    color: #ffffff;
+    margin-bottom: 5px;
+    padding: 12px 15px;
+}
+
+.video-title .fa {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.video-title h2 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.featured-videos {
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.video-list {
+    border-bottom: 1px solid #dddddd;
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+
+.video-list:last-child {
+    border: none;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+}
+
+.video-thumbnail {
+    margin-bottom: 8px;
+}
+.vsubtitle{
+    font-size: 10px;
+    display: none;
+}
+.clear.clearfix {
+    clear: both;
+}
