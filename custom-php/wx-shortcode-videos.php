@@ -110,7 +110,7 @@ function video_l( $atts ) {
 		            	</div>
 					</div>
 					<div class="col-md-10">
-            			<label class="vtitle">'.$title.'</label>
+            		   <label class="vtitle"><a  href="'.$url.'" class="'.$fancy.'" data-fancybox-type="iframe">'.$title.'</a></label>
             			<label class="vsubtitle">'.$filesize.'</label>
         			</div>
         			<div class="clear clearfix"></div>';
