@@ -1,37 +1,61 @@
 <?php 
+function tm_get_all_videos() {
+    $args      = array(
+        'hide_empty' => true,
+        'post_status'      => 'publish',
+        'post_type' => 'videos'
+        //'fields'     => 'id=>name',
+    );
+    $custom = get_posts($args);
+	$menu_result = array();
+	$menu_result[''] = esc_html__( 'Default Menu', 'tm-dione' );
+	foreach ($custom as $post) {
+		setup_postdata($post);
+		$menu_result[$post->post_title] = $post->ID;
+	}
+	
+    return $menu_result;
+}
 
-function video_function( $atts ) {
-
+function video_l( $atts ) {
 	global $wpdb;
 
-	$post_id = get_the_ID();
 
-    $count =  get_field( "total_video_display", $post_id );
+   $atts = shortcode_atts(
+		array(
+			'vcounter' => '',
+			'vfeatured' => '' 
+		), $atts
+	);
 
-    $featured = get_field( "featured_videos", $post_id );
+	$post_id = $atts['vfeatured'];
+
+    $count =  $atts['vcounter'];
+
+    
      
 
-	echo '<div class="main-wrapper-video" id="'.$featured->ID.'">';
+	$output = '<div class="main-wrapper-video" id="'.$post_id.'">';
 
-
-         if($featured->ID==""){ }else{
+    
+         if($post_id==""){ }else{
 			    
-			    $video_type = get_field("video_type",$featured->ID);
+			    $video_type = get_field("video_type",$post_id);
 
 			    if($video_type=="Url"){
-			    $urlmain =get_field("url",$featured->ID);	
+			    $urlmain =get_field("url",$post_id);	
 			    $urlextract = explode("v=",$urlmain);
 
-			        echo "<div class='featured-videos'>";
-		   		    echo '<div class="col-md-12" style="padding-bottom:20px"><iframe style="width:100%" height="100%" src="https://www.youtube.com/embed/'.$urlextract[1].'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen  ></iframe></div>';
-		   		    echo "</div>";
+			        $output .= "<div class='featured-videos'>";
+		   		    $output .= '<div class="col-md-12" style="padding-bottom:20px"><iframe style="width:100%" height="100%" src="https://www.youtube.com/embed/'.$urlextract[1].'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen  ></iframe></div>';
+		   		    $output .= "</div>";
 	   		    }
 	   		    if($video_type=="Upload"){
 	   		       
-	   		       $attachment_ids = get_field('upload',$featured->ID);
+	   		       $attachment_ids = get_field('upload',$post_id);
 			       $urlmain = wp_get_attachment_url( $attachment_ids ); 
 
-	   		    	echo '<video width="100%" height="100%" controls>
+	   		    	$output .= '<video width="100%" height="100%" controls>
 						  <source src="'.$urlmain.'" type="video/mp4">
 						 Your browser does not support the video tag.
 						</video>';
@@ -75,10 +99,10 @@ function video_function( $atts ) {
 		}
 		
 		
-	   		if($featured->ID!=$vID) { 
+	   		if($post_id!=$vID) { 
 
-				echo "<div class='video-list' id='".$vID ."'>";
-				echo '<div class="col-md-2">
+				$output .= "<div class='video-list' id='".$vID ."'>";
+				$output .= '<div class="col-md-2">
 						<div class="video-thumbnail">
 			                <a  href="'.$url.'" class="'.$fancy.'" data-fancybox-type="iframe">
 			                    <img src="'.$featured_image.'" >
@@ -90,9 +114,9 @@ function video_function( $atts ) {
             			<label class="vsubtitle">'.$filesize.'</label>
         			</div>
         			<div class="clear clearfix"></div>';
-				echo "</div>"; 
+				$output .= "</div>"; 
 				if($video_type=="Upload"){ 
-	   			echo '<div style="display:none"><div id="'.$urlid.'"  ><video width="100%" height="480" controls>
+	   			$output .= '<div style="display:none"><div id="'.$urlid.'"  ><video width="100%" height="480" controls>
 						  <source src="'.$urlvid.'" type="video/mp4">
 						 Your browser does not support the video tag.
 					   </video></div></div>';
@@ -103,6 +127,36 @@ function video_function( $atts ) {
  	
 	endwhile;
  
-echo "</div>"; 
+$output .= "</div>"; 
+
+
+return	$output;
 }
-add_shortcode( 'video_list', 'video_function' );
+add_shortcode( 'video-l', 'video_l' );
+
+function vl_integratedWithVC() {
+	vc_map( array( 
+		'name'				=>	__( 'Video List' ),
+		'base'				=>	'video-l',
+		'class'				=>	'',
+		"category" => __( "WX Custom Shortcode", "tm-dione"),
+		'params'			=>	array(
+									array(
+										'type'			=>	'textfield',
+										'class'			=>	'',
+										'heading'		=>	__( 'Count' ),
+										'description'	=>	_x( 'Example 6', 'backend', 'vc-elements-pt' ),
+										'param_name'	=>	'vcounter',
+									),
+									array(
+										'type'			=>	'dropdown',
+										'heading'		=>	__( 'Featured' ),
+										'description'	=>	_x( 'Choose featured videos for this page', 'backend', 'vc-elements-pt' ),
+										'param_name'	=>	'vfeatured',
+										'value'			=>	 tm_get_all_videos()
+									)	 
+								)
+	) );
+}
+add_action( 'vc_before_init', 'vl_integratedWithVC' );
+ 
