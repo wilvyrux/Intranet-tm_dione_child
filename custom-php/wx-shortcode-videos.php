@@ -129,8 +129,21 @@ function video_l( $atts ) {
  
 $output .= "</div>"; 
 
+ 
 
-return	$output;
+$scripts = '<script>
+					 jQuery(".videolink").fancybox({
+						  "type":"iframe"
+						}); 
+
+						jQuery(".videolink2").fancybox({
+						              width: 560,
+						              height: 480
+						}); 
+			</script>';
+
+return	$output.$scripts ;
+
 }
 add_shortcode( 'video-l', 'video_l' );
 
