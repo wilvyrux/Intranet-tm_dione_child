@@ -1937,8 +1937,18 @@
     }
 
     .video-list {
+
+        &:hover {
+            opacity:.4;
+        }
+        
         label {
             padding: 10px 0px;
+
+            a {
+                text-decoration:none;
+                color:$color-gray;
+            }
         }
     }
 }

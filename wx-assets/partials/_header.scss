@@ -139,13 +139,63 @@ header {
     
 }
 
-
+header.sticky-header,
 header.header.headroom.headroom--not-top {
     .main-navigation {
-        ul {
+        ul#menu-main-menu {
+            > li {
+                > a {
+                    color:$color-white;
+
+                    &:hover {
+                        color:$color-primary;
+                    }
+                }
+            }
+
             li {
                 a {
-                    color:$color-white;
+                    text-decoration:none !important;
+
+                     &:hover {
+                        color:$color-primary;
+                     }
+                }
+
+                &:before,
+                &:after {
+                    display:none !important;
+                }
+
+            }
+        }
+    }
+}
+
+
+header.header.headroom.headroom--not-top {
+    @include t-black(.8);
+}
+
+
+header.sticky-header.dark {
+    .main-navigation {
+        .TMWalkerMenu {
+            li {
+                ul.sub-menu {
+                    padding:0 !important;
+                    background:$color-black;
+
+                    li {
+                        a {
+                            border-bottom:1px solid $color-gray2;
+                            color:$color-white;
+
+                            &:hover {
+                                color:$color-primary;
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -71,46 +71,23 @@ if ( Kirki::get_option( 'tm-dione', 'footer_parallax_enable' ) == 1 ) {
 	<?php } ?>
 
 	<?php if ( Kirki::get_option( 'tm-dione', 'copyright_enable' ) == 1 ) { ?>
-		<div class="copyright <?php echo esc_attr($footer_sticky) ?>">
-			<div class="<?php echo esc_attr( $footer_cl ) ?>">
-				<div class="row">
+			<div class="copyright <?php echo esc_attr($footer_sticky) ?>">
+				<div class="<?php echo esc_attr( $footer_cl ) ?>">
+					<div class="row">
+	                    
+	                    
+	                    <div class="col-xs-12 col-sm-6 text-left">
+	                        <p><?php echo html_entity_decode( Kirki::get_option( 'tm-dione', 'copyright_text' ) ); ?></p>
+	                    </div>
+	                    
+	                    <div class="col-xs-12 col-sm-6 text-right">
+	                          <?php dynamic_sidebar ('footer-terms-links') ?>
+	                    </div>
 
 
-					<?php if(Kirki::get_option( 'tm-dione', 'copyright_display' ) == 'col-md-6'): ?>
-						<div class="<?php echo esc_attr(Kirki::get_option( 'tm-dione', 'copyright_display' )) ?> col-xs-center copyright_text"><?php echo html_entity_decode( Kirki::get_option( 'tm-dione', 'copyright_text' ) ); ?>
-
-						</div>
-						<?php if ( Kirki::get_option( 'tm-dione', 'copyright_social_menu_enable' ) == 1 ) { ?>
-							<div class="<?php echo esc_attr(Kirki::get_option( 'tm-dione', 'copyright_display' )) ?> col-xs-center text-right">
-								<div class="social">
-									<?php wp_nav_menu( array(
-										'theme_location'  => 'social',
-										'container_class' => 'social-menu',
-										'fallback_cb'     => false
-									) ); ?>
-								</div>
-							</div>
-						<?php } ?>
-					<?php else: ?>
-						<div class="<?php echo esc_attr(Kirki::get_option( 'tm-dione', 'copyright_display' )) ?> col-xs-center copyright_text">
-							<?php echo html_entity_decode( Kirki::get_option( 'tm-dione', 'copyright_text' ) ); ?>
-							
-							<?php if ( Kirki::get_option( 'tm-dione', 'copyright_social_menu_enable' ) == 1 ) { ?>
-								<div class="social">
-									<?php wp_nav_menu( array(
-										'theme_location'  => 'social',
-										'container_class' => 'social-menu',
-										'fallback_cb'     => false
-									) ); ?>
-								</div>
-							<?php } ?>
-
-
-						</div>
-					<?php endif; ?>
+					</div>
 				</div>
-			</div>
-		</div><!-- .copyright -->
+			</div><!-- .copyright -->
 	<?php } ?>
 
 </div>

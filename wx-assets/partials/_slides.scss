@@ -176,11 +176,16 @@
             text-transform: uppercase;
             font-weight:$bold;
 
-             .news-date {
+            .news-date {
                 display: block;
                 font-weight: normal;
                 font-size: .9em; 
                 font-style:italic;
+            }
+
+            &:hover {
+                background:$color-dark;
+                opacity:.9;  
             }
 
        

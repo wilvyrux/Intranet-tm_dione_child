@@ -44,7 +44,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
             color: $color-white;
             font-size: 1.875em;
             @include transition(1s);
-            font-weight: $light;
+            font-weight: $medium;
+            font-family:$font-primary;
             
         }
 
@@ -85,10 +86,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
                       overflow: hidden;
                        text-overflow: ellipsis;
                        display: -webkit-box;
-                       line-height: 16px;     /* fallback */
+                       line-height: 15px;     /* fallback */
                        max-height: 32px;      /* fallback */
                        -webkit-line-clamp: 2; /* number of lines to show */
                        -webkit-box-orient: vertical;
+                       font-size:.8em;
                 }
 
             }
